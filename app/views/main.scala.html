@@ -1,0 +1,62 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+
+<html ng-app="stregsystemet"> 
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/foundation.min.css")">
+        <script src="http://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-resource.min.js">
+        <script src="@routes.Assets.at("javascripts/hash.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/foundation.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/vendor/modernizr.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/vendor/fastclick.js")" type="text/javascript"></script>
+
+        <!-- <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+        <!-- <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> -->
+        <!-- <script src="http://getbootstrap.com/assets/js/ie10&#45;viewport&#45;bug&#45;workaround.js"></script> -->
+        <!-- <script src="@routes.Assets.at("javascripts/jquery.cookie.js")" type="text/javascript"></script> -->
+        <script>
+            angular.module("Tutor", [])
+        </script>
+    </head>
+        <body>
+
+
+  <section class="gs-navigation">
+    <section class="gs-topbar">
+  <nav class="top-bar" data-topbar="">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">Title</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    
+  <section class="top-bar-section">
+      <ul class="right">
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="small-8 large-7 columns">
+              <input placeholder="Search" type="text">
+            </div>
+            <div class="small-3 large-3 end columns">
+              <a href="#" class="alert button expand">Go</a>
+            </div>
+          </div>
+        </li>
+        <li class="has-dropdown not-click">
+          <a href="#">Dropdown</a>
+          <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">Dropdown</a></li>
+            <li><a href="#">First link in dropdown</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section></nav>
+
+            @content
+        </body>
+  </html>
